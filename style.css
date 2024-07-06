@@ -1,0 +1,138 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styles */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #efdfee; 
+    margin: 0;
+    padding: 0;
+    color: #333; /* Default text color */
+    background-image: url(pic1.jpg);
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image horizontally and vertically */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    height: 100vh; /* Make sure the background cove
+  }
+  
+  /* Header styles */
+  .header {
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+    
+}
+  
+  .header h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 600;
+  }
+  
+  /* Main container styles */
+  .container-fluid {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+    background-color: #fff; /* White background for the main content */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Main section styles */
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Input section styles */
+  .inputs {
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #fff; /* White background for input section */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .inputs label {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .inputs input[type="text"],
+  .inputs input[type="submit"],
+  .inputs button {
+    padding: 12px;
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .inputs input[type="text"] {
+    background-color: #f9f9f9; /* Light grey background for input fields */
+    padding: 10px;
+  }
+  
+  .inputs input[type="submit"],
+  .inputs button {
+    margin-top: 10px;
+    background-color: transparent; /* Transparent background by default */
+    color: #2980b9; /* Dark blue text color */
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transition for background-color and text color */
+  }
+  
+  .inputs input[type="submit"]:hover,
+  .inputs button:hover {
+    background-color: #2980b9; /* Dark blue background color on hover */
+    color: white; /* White text color on hover */
+  }
+  
+  /* Display section styles */
+  .display {
+    background-color: #fff; /* White background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    font-size: 22px; /* Larger font size for weather information */
+  }
+  
+  .display.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .display .wrapper {
+    text-align: center;
+  }
+  
+  .display h2 {
+    font-size: 28px; /* Larger heading font size */
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .display p {
+    font-size: 20px; /* Larger paragraph font size */
+    margin-bottom: 10px;
+    color: #555;
+    line-height: 1.5;
+  }
+  
